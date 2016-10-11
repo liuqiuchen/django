@@ -6,7 +6,30 @@
 </head>
 <body>
 
-Welcome to zqxt
+<!-- {{ string }} -->
+
+<!-- {% for i in TutorialList %}
+{{ i }}
+{% endfor %} -->
+
+<!-- 站点：{{info_dict.site}} 内容：{{info_dict.content}} -->
+
+<!-- {% for key, value in info_dict.items %}
+	{{key}}: {{value}}
+{% endfor %} -->
+
+<!-- {% for item in List %}
+	{{item}}{% if not forloop.last %},{% endif %}
+{% endfor %} -->
+
+<ul>
+	{% for athlete in athlete_list %}
+	<li>{{athlete.name}}</li>
+	{% empty %}
+	<li>抱歉，列表为空</li>
+	{% endfor %}
+</ul>
+
 	
 </body>
 </html>
