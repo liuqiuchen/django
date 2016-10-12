@@ -12,5 +12,5 @@ class Article(models.Model):
 	update_time = models.DateTimeField(u'更新时间', auto_now=True, null=True)
 	
 	def __str__(self):
-		# 显示自己的文章内容
+		# 显示每个文章的文章标题
 		return self.title
