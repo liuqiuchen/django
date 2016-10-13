@@ -20,5 +20,5 @@ from mysite.views import current_datetime
 
 urlpatterns = [
 	url(r'^time/$', current_datetime),
-    url(r'^admin/', admin.site.urls),
+	url(r'^admin/', admin.site.urls),
 ]
