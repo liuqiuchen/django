@@ -19,5 +19,5 @@ from MyDjangoSite.view import user_info
 
 urlpatterns = [
 	url(r'^u/$',user_info),
-    url(r'^admin/', admin.site.urls),
+	url(r'^admin/', admin.site.urls),
 ]
